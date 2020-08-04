@@ -193,6 +193,6 @@ dupmn profadd ~/mnprofiles/xchainz.dmn xcz
 xchainz-cli stop
 sleep 5
 
-for run in {1..$numdups}; do dupmn install xcz -b; done
+for run in {1..9}; do dupmn install xcz -b; done
 
 dupmn list -a
