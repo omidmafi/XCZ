@@ -135,7 +135,7 @@ fi
 xchainz-cli stop
 sleep 5
 cd ~/.xchainz/ && rm -rf blocks chainstate sporks zerocoin
-cd ~/.xchainz/ && wget -q https://www.dropbox.com/s/3gk9ttui4cguh5x/bootstrap.zip?dl=1 -O bootstrap.zip
+cd ~/.xchainz/ && wget -q --show-progress https://www.dropbox.com/s/3gk9ttui4cguh5x/bootstrap.zip?dl=1 -O bootstrap.zip
 cd ~/.xchainz/ && unzip -o bootstrap.zip
 rm ~/.xchainz/bootstrap.zip
 
@@ -189,6 +189,8 @@ COIN_FOLDER="/root/.xchainz"
 COIN_CONFIG="xchainz.conf"
 COIN_SERVICE="xchainz.service"
 EOF
+
+dupmn swapfile 4096
 
 dupmn profadd ~/mnprofiles/xchainz.dmn xcz
 xchainz-cli stop
