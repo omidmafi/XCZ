@@ -1,7 +1,8 @@
 #!/bin/bash
 #
+# Forked from: https://github.com/axanthics/XCZ-Masternode
 # Usage:
-# bash xchainz.autoinstall.sh
+# bash xchainz.autoinstall.sh PRIVATE_KEY NUM_DUPS
 #
 
 #Color codes
