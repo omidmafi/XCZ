@@ -2,7 +2,7 @@
 #
 # Forked from: https://github.com/axanthics/XCZ-Masternode
 # Usage:
-# bash xchainz.autoinstall.sh PRIVATE_KEY NUM_DUPS
+# bash xchainz.autoinstall.sh NUM_DUPS
 #
 
 #Color codes
@@ -15,8 +15,8 @@ NC='\033[0m' # No Color
 PORT=14815
 RPC=14814
 
-genkey=$1
-numdups=$2
+genkey=''
+numdups=$1
 if [ -z $numdups ]; then
     numdups=9
 fi
