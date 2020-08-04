@@ -190,7 +190,7 @@ COIN_CONFIG="xchainz.conf"
 COIN_SERVICE="xchainz.service"
 EOF
 
-dupmn swapfile 4096
+dupmn swapfile 6144
 
 dupmn profadd ~/mnprofiles/xchainz.dmn xcz
 xchainz-cli stop
