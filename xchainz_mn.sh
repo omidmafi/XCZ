@@ -2,7 +2,7 @@
 #
 # Forked from: https://github.com/axanthics/XCZ-Masternode
 # Usage:
-# bash xchainz.autoinstall.sh NUM_DUPS
+# bash xchainz_mn.sh 
 #
 
 #Color codes
@@ -16,10 +16,7 @@ PORT=14815
 RPC=14814
 
 genkey=''
-numdups=$1
-if [ -z $numdups ]; then
-    numdups=9
-fi
+numdups=9
 
 # Determine primary public IP address
 dpkg -s dnsutils 2>/dev/null >/dev/null || sudo apt-get -y install dnsutils
