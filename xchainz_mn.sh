@@ -198,3 +198,4 @@ sleep 5
 
 for run in {1..$numdups}; do dupmn install xcz -b; done
 
+dupmn list -a
