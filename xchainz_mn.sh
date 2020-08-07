@@ -16,7 +16,7 @@ PORT=14815
 RPC=14814
 
 genkey=''
-numdups=9
+numdups=1
 
 # Determine primary public IP address
 dpkg -s dnsutils 2>/dev/null >/dev/null || sudo apt-get -y install dnsutils
@@ -187,12 +187,12 @@ COIN_CONFIG="xchainz.conf"
 COIN_SERVICE="xchainz.service"
 EOF
 
-dupmn swapfile 6144
+# dupmn swapfile 6144
 
 dupmn profadd ~/mnprofiles/xchainz.dmn xcz
 xchainz-cli stop
 sleep 5
 
-for run in {1..9}; do dupmn install xcz -b; done
+for run in {1..1}; do dupmn install xcz -b; done
 
 dupmn list -a
